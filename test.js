@@ -32,13 +32,14 @@ function MakeLocation(name, minCustPerHour, maxCustPerHour, avgCookieSoldPerHour
   };
   this.calcCookiesSoldByHour();
 
-  this.calcTotalCookies = function(){
-    var total = 0;
-    for (var k = 0; k < hours.length; k++){
-      totalCookies.push(total += this.cookiesSoldByHour[k]);
-    }
-  };
-  this.calcTotalCookies();
+  // this.calcTotalCookies = function(){
+  //   var total = 0;
+  //   for (var k = 0; k < hours.length; k++){
+  //   total += this.cookiesSoldByHour[k];
+  //   this.totalCookies.push(total);
+  //   }
+  // };
+  // this.calcTotalCookies();
 
   this.render = function(){
     var firstAndPike = document.getElementById('firstandpike');
