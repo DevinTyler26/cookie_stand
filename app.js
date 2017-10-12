@@ -1,6 +1,7 @@
 'use strict';
 
 var firstAndPike = {
+  locationName: '1st and Pike',
   locationNum: 1,
   minCust: 23,
   maxCust: 65,
