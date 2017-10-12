@@ -22,7 +22,6 @@ function MakeLocation(name, minCustPerHour, maxCustPerHour, avgCookieSoldPerHour
       console.log(this.randomCustByHour[i]);
     }
   };
-  this.calcRandCustByHour();
 
   this.calcCookiesSoldByHour = function(){
     for(var j = 0; j < hours.length; j++){
@@ -30,22 +29,22 @@ function MakeLocation(name, minCustPerHour, maxCustPerHour, avgCookieSoldPerHour
       console.log(this.cookiesSoldByHour[j]);
     }
   };
-  this.calcCookiesSoldByHour();
 
-  // this.calcTotalCookies = function(){
-  //   var total = 0;
-  //   for (var k = 0; k < hours.length; k++){
-  //   total += this.cookiesSoldByHour[k];
-  //   this.totalCookies.push(total);
-  //   }
-  // };
-  // this.calcTotalCookies();
+  calcTotalCookies: function(){
+    var total = 0;
+    for (var k = 0; k < hours.length; k++){
+    total += this.cookiesSoldByHour[k];
+    }
+    this.totalCookies = total;
+    console.log('Total: ' + total + ' cookies');
+  };
 
   this.render = function(){
     var firstAndPike = document.getElementById('firstandpike');
     var fandp = document.getElementById('fandp');
     this.calcRandCustByHour();
     this.calcCookiesSoldByHour();
+    this.calcTotalCookies();
     //create New h3 Element
     var h3El = document.createElement('h3');
     //give text to new element
