@@ -28,11 +28,12 @@ var firstAndPike = {
   },
 
   calcTotalCookies: function(){
+    var total = 0;
     for (var k = 0; k < hours.length; k++){
-      var total = 0;
-      totalCookies.push(total += this.cookiesSoldByHour[k]);
-      console.log('The total for this store is ' + totalCookies);
+    total += this.cookiesSoldByHour[k];
     }
+    this.totalCookies = total;
+    console.log('Total: ' + total + ' cookies');
   },
 
   render: function(){
@@ -40,6 +41,7 @@ var firstAndPike = {
     var fandp = document.getElementById('fandp');
     this.calcRandCustByHour();
     this.calcCookiesSoldByHour();
+    this.calcTotalCookies();
     //create New h3 Element
     var h3El = document.createElement('h3');
     //give text to new element
