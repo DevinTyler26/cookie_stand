@@ -1,4 +1,8 @@
-
+.salmon{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
 body{
   font-family: Georgia;
   width: 100%;
@@ -22,12 +26,11 @@ body{
   z-index: 0;
 }
 
-p{
+h1{
   font-family: Arial;
-
 }
 
-.highlights{
+h3{
   font-family: 'Cabin', sans-serif;
 
 }

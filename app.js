@@ -234,9 +234,9 @@ caphill.render();
 
 var alki = {
   name: 'Alki',
-  minCustPerHour: 3,
-  maxCustPerHour: 624,
-  avgCookieSoldPerHour: 1.2,
+  minCustPerHour: 2,
+  maxCustPerHour: 16,
+  avgCookieSoldPerHour: 4.6,
   randomCustByHour: [],
   cookiesSoldByHour: [],
   totalCookies: 0,
