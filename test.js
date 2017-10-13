@@ -30,7 +30,7 @@ function MakeLocation(name, minCustPerHour, maxCustPerHour, avgCookieSoldPerHour
     }
   };
 
-  calcTotalCookies: function(){
+  this.calcTotalCookies = function(){
     var total = 0;
     for (var k = 0; k < hours.length; k++){
     total += this.cookiesSoldByHour[k];
@@ -38,27 +38,8 @@ function MakeLocation(name, minCustPerHour, maxCustPerHour, avgCookieSoldPerHour
     this.totalCookies = total;
     console.log('Total: ' + total + ' cookies');
   };
-
-  this.render = function(){
-    var firstAndPike = document.getElementById('firstandpike');
-    var fandp = document.getElementById('fandp');
-    this.calcRandCustByHour();
-    this.calcCookiesSoldByHour();
-    this.calcTotalCookies();
-    //create New h3 Element
-    var h3El = document.createElement('h3');
-    //give text to new element
-    h3El.textContent = this.name;
-    fandp.appendChild(h3El);
-    for(var l = 0; l < hours.length; l++){
-      var liEl = document.createElement('li');
-      liEl.textContent = hours[l] + ': ' + this.cookiesSoldByHour[l] + ' cookies';
-      console.log(liEl);
-      firstandpike.appendChild(liEl);
-    };
-    this.render();
-  };
 };
+
 function makeStands(){
   new MakeLocation('First and Pike', 23, 65, 6.3);
   new MakeLocation('SeaTac Airport', 3, 24, 1.2);

@@ -22,7 +22,7 @@ var firstAndPike = {
   calcCookiesSoldByHour: function(){
     for(var j = 0; j < hours.length; j++){
       this.cookieSBH.push(Math.round(this.avgCSPH * this.ranCBH[j]));
-      console.log('Number of Cokies Sold This Hour: ' + this.cookieSBH[j]);
+      console.log('Number of Cookies Sold This Hour: ' + this.cookieSBH[j]);
     }
   },
 
@@ -77,7 +77,7 @@ var seaTacAirport = {
   calcCookiesSoldByHour: function(){
     for(var j = 0; j < hours.length; j++){
       this.cookieSBH.push(Math.round(this.avgCSPH * this.ranCBH[j]));
-      console.log('Number of Cokies Sold This Hour: ' + this.cookieSBH[j]);
+      console.log('Number of Cookies Sold This Hour: ' + this.cookieSBH[j]);
     }
   },
 
@@ -132,7 +132,7 @@ var seattleCenter = {
   calcCookiesSoldByHour: function(){
     for(var j = 0; j < hours.length; j++){
       this.cookieSBH.push(Math.round(this.avgCSPH * this.ranCBH[j]));
-      console.log('Number of Cokies Sold This Hour: ' + this.cookieSBH[j]);
+      console.log('Number of Cookies Sold This Hour: ' + this.cookieSBH[j]);
     }
   },
 
@@ -187,7 +187,7 @@ var caphill = {
   calcCookiesSoldByHour: function(){
     for(var j = 0; j < hours.length; j++){
       this.cookieSBH.push(Math.round(this.avgCSPH * this.ranCBH[j]));
-      console.log('Number of Cokies Sold This Hour: ' + this.cookieSBH[j]);
+      console.log('Number of Cookies Sold This Hour: ' + this.cookieSBH[j]);
     }
   },
 
@@ -242,7 +242,7 @@ var alki = {
   calcCookiesSoldByHour: function(){
     for(var j = 0; j < hours.length; j++){
       this.cookieSBH.push(Math.round(this.avgCSPH * this.ranCBH[j]));
-      console.log('Number of Cokies Sold This Hour: ' + this.cookieSBH[j]);
+      console.log('Number of Cookies Sold This Hour: ' + this.cookieSBH[j]);
     }
   },
 
