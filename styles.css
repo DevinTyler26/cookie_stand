@@ -11,10 +11,11 @@ body{
 }
 
 #hoursandcookies{
-  margin: 0 auto;
+  float: left;
+  margin: 20px;
   border-radius: 25px;
   max-width: 1920px;
-  width: 80%;
+  width: 25%;
   height:auto;
   background: rgba(204, 204, 204, 0.8);
   padding: 20px;
