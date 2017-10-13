@@ -21,9 +21,8 @@ body{
   max-width: 1920px;
   width: 25%;
   height:auto;
-  background: rgba(204, 204, 204, 0.8);
+  background: rgba(240, 240, 240, 0.8);
   padding: 20px;
-  z-index: 0;
 }
 
 h1{
@@ -32,6 +31,7 @@ h1{
 
 h3{
   font-family: 'Cabin', sans-serif;
+  margin: 0px;
 
 }
 
