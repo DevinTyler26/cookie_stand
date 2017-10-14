@@ -40,16 +40,36 @@ h3{
 }
 
 table{
+  font-family: 'Cabin', sans-serif;
+  background: rgba(240, 240, 240, 0.8);
   border: solid black 1px;
+  margin: 20px;
+  border-radius: 25px;
+  padding: 30px;
 }
 
 th{
-  width: 60px
+  height: 60px;
+  width: 100px
   border: solid black 1px;
 }
 
+.location{
+    width: 200px;
+}
+
 td{
+  padding: 20px;
   text-align: center;
   height: 30px;
+  width: 120px;
   border: solid black 1px;
+  border-radius: 60px;
+  border-color: rgba(255,	255,	255, 0.0);
+}
+tr:hover td:not(:first-child){
+  background-color: rgba(146,	181,	242, 0.8);
+  border-color: rgba(146,	181,	242, 0.8);
+  color: white;
+  font-weight: bolder;
 }
