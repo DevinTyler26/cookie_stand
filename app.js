@@ -7,33 +7,33 @@ var totalCookiesByHour = 0;
 var hourlyTotal = [];
 var tableEl = document.getElementById('salmoncookiestable');
 
-function MakeLocation(name, minCustPerHour, maxCustPerHour, avgCookieSoldPerHour){
+function MakeLocation(name, minCPH, maxCPH, avgCSPH){
   this.name = name;
-  this.minCustPerHour = minCustPerHour;
-  this.maxCustPerHour = maxCustPerHour;
-  this.avgCookieSoldPerHour = avgCookieSoldPerHour;
-  this.randomCustByHour = [];
-  this.cookiesSoldByHour = [];
+  this.minCPH = minCPH;
+  this.maxCPH = maxCPH;
+  this.avgCSPH = avgCSPH;
+  this.randomCBH = [];
+  this.cookiesSBH = [];
   this.totalCookies = 0;
   allLocations.push(this);
 
   this.calcRandCustByHour = function(){
     for(var i = 0; i < hours.length; i++){
-      this.randomCustByHour.push(Math.floor(Math.random() * (this.maxCustPerHour - this.minCustPerHour + 1)) + this.minCustPerHour);
-      console.log('Random Number of Customers This Hour: ' + this.randomCustByHour[i]);
+      this.randomCBH.push(Math.floor(Math.random() * (this.maxCPH - this.minCPH + 1)) + this.minCPH);
+      console.log('Random Number of Customers This Hour: ' + this.randomCBH[i]);
     }
-  },
+  };
 
   this.calcCookiesSoldByHour = function(){
     for(var j = 0; j < hours.length; j++){
-    this.cookiesSoldByHour.push(Math.round(this.avgCookieSoldPerHour * this.randomCustByHour[j]));
-      console.log(this.cookiesSoldByHour[j]);
+    this.cookiesSBH.push(Math.round(this.avgCSPH * this.randomCBH[j]));
+      console.log(this.cookiesSBH[j]);
     }
   };
 
   this.calcTotalCookies = function(){
     for (var k = 0; k < hours.length; k++){
-    this.totalCookies += this.cookiesSoldByHour[k];
+    this.totalCookies += this.cookiesSBH[k];
     }
     return this.totalCookies;
     console.log('Total: ' + totalCookies + ' cookies');
@@ -46,9 +46,9 @@ function MakeLocation(name, minCustPerHour, maxCustPerHour, avgCookieSoldPerHour
       thEl.className ="location";
       trEl.appendChild(thEl);
       for (var m = 0; m < hours.length; m++){
-        var tdEl = document.createElement('td');//creating
-        tdEl.textContent = this.cookiesSoldByHour[m]; //content
-        trEl.appendChild(tdEl);//add cell to the row
+        var tdEl = document.createElement('td');
+        tdEl.textContent = this.cookiesSBH[m];
+        trEl.appendChild(tdEl);
       }
       var totalForDay =  document.createElement('td');
       totalForDay.textContent = this.totalCookies;
@@ -105,7 +105,7 @@ console.log(thEl);
   for(var j = 0; j < hours.length; j++){
     var sum = 0;
     for(var i = 0; i < allLocations.length; i++){
-      sum += allLocations[i].cookiesSoldByHour[j];
+      sum += allLocations[i].cookiesSBH[j];
       var tdEl = document.createElement('td');
     }
       tdEl.textContent = sum;
