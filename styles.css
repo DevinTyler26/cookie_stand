@@ -1,8 +1,43 @@
-.salmon{
-  position: absolute;
-  top: 20px;
-  right: 20px;
+.page-header{
+  background-image: url("images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  display: table;
+  width: 100%;
+  margin: 0;
 }
+
+h1{
+  font-family: 'Pacifico', cursive;
+  color: white;
+  font-size: 800%;
+  text-align: center;
+  margin: 0;
+  /*text-shadow: 2px 2px grey;*/
+}
+h2{
+  font-family: 'Cabin', sans-serif;
+  color: white;
+  font-size: 26pt;
+  text-align: center;
+  margin: 0;
+  /*text-shadow: 2px 2px grey;*/
+}
+
+.salmon{
+  display: block;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.header-content{
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  display:table-cell;
+  vertical-align: middle;
+}
+
 body{
   font-family: Georgia;
   width: 100%;
@@ -12,6 +47,7 @@ body{
   background-size: cover;
   height: 100%;
   padding-left: 0px;
+  margin: 0;
 }
 
 #cookieshopbuild{
@@ -21,14 +57,16 @@ body{
   border-radius: 25px;
   max-width: 600px;
   width: 36%;
-  height:auto;
   background: rgba(240, 240, 240, 0.8);
   padding: 20px;
+  margin: 0;
 }
 
 fieldset{
   font-size: 20px;
   border-radius: 10px 30px 10px 10px;
+  height: 400px;
+  line-height: 40px;
 }
 
 #hoursandcookies{
@@ -42,9 +80,7 @@ fieldset{
   padding: 20px;
 }
 
-h1{
-  font-family: Arial;
-}
+
 
 h3{
   font-family: 'Cabin', sans-serif;
