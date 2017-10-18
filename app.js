@@ -123,3 +123,44 @@ console.log(thEl);
     console.log(sum2 + ' LAST NUMBER');
 };
 calcTotalCookiesPerHour(hours);
+
+var cookieshopbuild = document.getElementById('cookieshopbuild');
+
+function handleShopBuild(event) {
+  console.log(event);
+  event.preventDefault(); //gotta have it. prevents page reload
+
+  var name = event.target.name.value;
+  console.log(event.target.name.value);
+  var minCPH = parseInt(event.target.minCPH.value);
+  console.log(event.target.minCPH.value);
+  var maxCPH = parseInt(event.target.maxCPH.value);
+  console.log(event.target.maxCPH.value);
+  var avgCSPH = parseInt(event.target.avgCSPH.value);
+  console.log(event.target.avgCSPH.value);
+
+  var newShop = new MakeLocation(name, minCPH, maxCPH, avgCSPH);
+
+  console.log('Created shop ' + event.target.name.value + ' with min cust at ' + minCPH + ' and max cust at ' + maxCPH + ' and avg cookies sold per hour at ' + avgCSPH);
+  console.log(allLocations);
+
+  event.target.name.value = null;
+  event.target.minCPH.value = null;
+  event.target.maxCPH.value = null;
+  event.target.avgCSPH.value = null;
+
+  document.getElementById("salmoncookiestable").deleteRow(allLocations.length);
+
+  function makeTable(){
+      allLocations[allLocations.length - 1].calcRandCustByHour();
+      allLocations[allLocations.length - 1].calcCookiesSoldByHour();
+      allLocations[allLocations.length - 1].calcTotalCookies();
+      allLocations[allLocations.length - 1].tableRowMaker();
+      }
+  makeTable();
+  calcTotalCookiesPerHour(hours);
+
+
+};
+
+cookieshopbuild.addEventListener('submit', handleShopBuild);

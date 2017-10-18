@@ -4,7 +4,6 @@
   right: 20px;
 }
 body{
-  font-family: Georgia;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -14,33 +13,18 @@ body{
   padding-left: 0px;
 }
 
-#cookieshopbuild{
+#cookiestandcreator{
   font-family: 'Cabin', sans-serif;
   float: left;
   margin: 20px;
   border-radius: 25px;
-  max-width: 600px;
+  max-width: 1920px;
   width: 36%;
   height:auto;
   background: rgba(240, 240, 240, 0.8);
   padding: 20px;
 }
 
-fieldset{
-  font-size: 20px;
-  border-radius: 10px 30px 10px 10px;
-}
-
-#hoursandcookies{
-  float: left;
-  margin: 20px;
-  border-radius: 25px;
-  max-width: 1920px;
-  width: 25%;
-  height:auto;
-  background: rgba(240, 240, 240, 0.8);
-  padding: 20px;
-}
 
 h1{
   font-family: Arial;
