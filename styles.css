@@ -56,10 +56,8 @@ body{
   margin: 20px;
   border-radius: 25px;
   max-width: 600px;
-  width: 36%;
   background: rgba(240, 240, 240, 0.8);
   padding: 20px;
-  margin: 0;
 }
 
 fieldset{
@@ -74,7 +72,7 @@ fieldset{
   margin: 20px;
   border-radius: 25px;
   max-width: 1920px;
-  width: 25%;
+  width: 100%;
   height:auto;
   background: rgba(240, 240, 240, 0.8);
   padding: 20px;
@@ -96,9 +94,12 @@ table{
   font-family: 'Cabin', sans-serif;
   background: rgba(240, 240, 240, 0.8);
   border: solid black 1px;
-  margin: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 25px;
-  padding: 30px;
+  padding: 10px;
+  width: 68%;
 }
 
 th{
@@ -112,7 +113,7 @@ th{
 }
 
 td{
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   height: 30px;
   width: 120px;

@@ -73,11 +73,11 @@ function tableHeaderRowMaker(hours){
   thEl.textContent = " ";
   trEl.appendChild(thEl);
   for (var l = 0; l < hours.length; l++){
-    var thEl = document.createElement('th');//creating
-    thEl.textContent = hours[l]; //content
-    trEl.appendChild(thEl);//add cell to the row
+    var thEl = document.createElement('th');
+    thEl.textContent = hours[l];
+    trEl.appendChild(thEl);
   }
-  tableEl.appendChild(trEl);//add rows to table
+  tableEl.appendChild(trEl);
   var thEl = document.createElement('th');
   thEl.textContent = "Daily Location Total";
   trEl.appendChild(thEl);
@@ -128,7 +128,7 @@ var cookieshopbuild = document.getElementById('cookieshopbuild');
 
 function handleShopBuild(event) {
   console.log(event);
-  event.preventDefault(); //gotta have it. prevents page reload
+  event.preventDefault();
 
   var name = event.target.name.value;
   console.log(event.target.name.value);
