@@ -1,15 +1,9 @@
-.salmon{
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
 body{
   margin: 0;
 }
 
 .header-box{
-  background-image: url("images/hpBackGround.png");
+  background-image: url("images/cookie-header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: white;
@@ -17,18 +11,26 @@ body{
   display: table;
   width: 100%;
   margin: 0;
-  z-index: -1;
+  z-index: -2;
   position: fixed;
 }
 
 .header{
   height: 600px;
   display: table;
-  width: 100%;
+  width: 50%;
   margin: 0;
-  z-index: -2;
-  background: rgba(240, 240, 240, 0.0);
+  z-index: -1;
+  background: rgba(0 , 0, 0, 0.5);
   font-family: 'Pacifico', cursive;
+  display:table-cell;
+  vertical-align: middle;
+}
+
+.salmon{
+  display: block;
+  margin: auto;
+  padding-top: 20px;
 }
 
 .homepage{
@@ -47,8 +49,12 @@ body{
   padding: 20px;
   z-index: 1;
   font-family: 'Cabin', sans-serif;
-  margin: 20px auto;
+  margin: 0px auto;
   width: 80%;
+}
+
+.about-us{
+  padding-top: 20px;
 }
 
 .body-background{
@@ -57,6 +63,26 @@ body{
   width: 100%;
 }
 
+h1{
+  font-family: 'Pacifico', cursive;
+  color: white;
+  font-size: 800%;
+  text-align: center;
+  margin: 0;
+  /*text-shadow: 2px 2px grey;*/
+}
 h2{
-    font-family: 'Cabin', sans-serif;
+  font-family: 'Cabin', sans-serif;
+  color: white;
+  font-size: 26pt;
+  text-align: center;
+  margin: 0;
+  /*text-shadow: 2px 2px grey;*/
+}
+
+h3{
+  font-family: 'Cabin', sans-serif;
+  color: black;
+  font-size: 12pt;
+  margin: 0;
 }
