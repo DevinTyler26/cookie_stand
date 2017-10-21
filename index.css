@@ -132,7 +132,7 @@ h3{
   margin: 0;
 }
 
-.location-img{
+.location-img-l{
   width: 300px;
   height: 200px;
   border-radius: 10px 80px 10px 10px;
@@ -140,7 +140,17 @@ h3{
   padding-right: 20px;
 
 }
+.location-img-r{
+  width: 300px;
+  height: 200px;
+  border-radius: 10px 80px 10px 10px;
+  float: right;
+  padding-right: 20px;
+
+}
+
 
 .location{
   margin: 60px auto;
+  overflow: auto;
 }

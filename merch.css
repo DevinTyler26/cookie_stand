@@ -46,8 +46,9 @@ li a:hover{
     background-color: #111;
 }
 
+
 .header-box{
-  background-image: url("images/shirt.jpg");
+  background-image: url("images/shirt.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -96,20 +97,21 @@ li a:hover{
   width: 80%;
 }
 
-.about-us{
-  padding-top: 20px;
-}
-
 .body-background{
   background-color: white;
   z-index: 0;
   width: 100%;
 }
 
+p{
+margin-top: 0;
+
+}
+
 h1{
   font-family: 'Pacifico', cursive;
   color: white;
-  font-size: 400%;
+  font-size: 600%;
   text-align: center;
   margin: 0;
   /*text-shadow: 2px 2px grey;*/
@@ -119,13 +121,36 @@ h2{
   color: white;
   font-size: 26pt;
   text-align: center;
-  margin: 20px;
+  margin: 0;
   /*text-shadow: 2px 2px grey;*/
 }
 
 h3{
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Pacifico', cursive;
   color: black;
   font-size: 12pt;
   margin: 0;
+}
+
+.merch-img-l{
+  width: 300px;
+  height: 300px;
+  border-radius: 10px 80px 10px 10px;
+  float: left;
+  padding-right: 20px;
+}
+
+.merch-img-r{
+  width: 300px;
+  height: 300px;
+  border-radius: 10px 80px 10px 10px;
+  float: right;
+  padding-right: 20px;
+
+}
+
+.merch{
+  margin: 60px auto;
+  margin-bottom: 100px;
+  overflow: auto;
 }
