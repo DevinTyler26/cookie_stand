@@ -2,43 +2,49 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Salmon Cookies!</title>
+    <title>Salmon Cookie Sales!</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   </head>
-  <body background="images/background.jpg">
-    <h1>Salmon Cookies!</h1>
-    <h2>How many cookies we are selling per hour, per store!</h2>
+  <body>
+  <nav>
+    <ul>
+      <li class="first navbar"><a href="index.html">Home</a></li>
+      <li class="navbar"><a href="merch.html">Merch</a></li>
+      <li class="navbar"><a href="sales.html">Sales</a></li>
+      <li class="last navbar"><a href="about-us.html">About Us</a></li>
+    </ul>
+  </nav>
+    <div class="page-header">
+      <div class="header-content">
+      <h1>Salmon Cookie Sales!</h1>
+      <h2>How many cookies we are selling per hour, per store!</h2>
+      <img src="images/salmon.png" alt="salmon photo" width="200px"  class="salmon">
+      </div>
+    </div>
+
+    <form id="cookieshopbuild">
+      <fieldset>
+        <legend>Open your own shop!</legend>
+        <label for="storename">Name Your New Shop: </label><br/>
+        <input type="text" name="name" required="required"/><br/>
+        <label for="minCPH">Minimun Customers Per Hour: </label><br/>
+        <input type="text" name="minCPH" required="required"/><br/>
+        <label for="maxCPH">Maximum Customer Per Hour: </label><br/>
+        <input type="text" name="maxCPH" required="required"/><br/>
+        <label for="avgCSPH">Average Cookies Sold Per Customer: </label><br/>
+        <input type="text" name="avgCSPH" /><br/>
+        <button type="submit" name="submit" value="submit">Create Your Shop!</button>
+      </fieldset>
+    </form>
 
     <div>
-      <img src="images/salmon.png" alt="salmon photo" width="200px"  class="salmon">
-    </div>
 
-    <div id="hoursandcookies">
-      <h3 id="fandp"></h3>
-      <ul id="firstandpike"></ul>
     </div>
+<table id="salmoncookiestable">
 
-    <div id="hoursandcookies">
-      <h3 id="seatac"></h3>
-      <ul id="seaTacAirport"></ul>
-    </div>
-
-    <div id="hoursandcookies">
-      <h3 id="center"></h3>
-      <ul id="seattleCenter"></ul>
-    </div>
-
-    <div id="hoursandcookies">
-      <h3 id="ch"></h3>
-      <ul id="caphill"></ul>
-    </div>
-
-    <div id="hoursandcookies">
-      <h3 id="ai"></h3>
-      <ul id="alki"></ul>
-    </div>
-
+</table>
     <div class="highlights"></div>
     <script type="text/javascript" src="app.js"></script>
   </body>

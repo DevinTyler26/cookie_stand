@@ -1,0 +1,156 @@
+body{
+  margin: 0;
+}
+
+nav{
+  z-index: 1;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+.first {
+  padding-left: 60px;
+}
+
+ul{
+    font-family: 'Cabin', sans-serif;
+    font-size: 12pt;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.navbar{
+    display: inline;
+    float: left;
+    border-right: 1px solid white;
+}
+
+.last{
+      border-right: none;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #111;
+}
+
+
+.header-box{
+  background-image: url("images/shirt.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+  height: 600px;
+  display: table;
+  width: 100%;
+  margin: 0;
+  z-index: -2;
+  position: fixed;
+}
+
+.header{
+  height: 600px;
+  display: table;
+  width: 1%;
+  margin: 0;
+  z-index: -1;
+  background: rgba(0 , 0, 0, 0.5);
+  font-family: 'Pacifico', cursive;
+  display:table-cell;
+  vertical-align: middle;
+}
+
+.salmon{
+  display: block;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.homepage{
+  margin: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.bodyinfo{
+  background-color: white;
+  max-width: 1920px;
+  width: 80%;
+  height:auto;
+  padding: 20px;
+  z-index: 1;
+  font-family: 'Cabin', sans-serif;
+  margin: 0px auto;
+  width: 80%;
+}
+
+.body-background{
+  background-color: white;
+  z-index: 0;
+  width: 100%;
+}
+
+p{
+margin-top: 0;
+
+}
+
+h1{
+  font-family: 'Pacifico', cursive;
+  color: white;
+  font-size: 600%;
+  text-align: center;
+  margin: 0;
+  /*text-shadow: 2px 2px grey;*/
+}
+h2{
+  font-family: 'Cabin', sans-serif;
+  color: white;
+  font-size: 26pt;
+  text-align: center;
+  margin: 0;
+  /*text-shadow: 2px 2px grey;*/
+}
+
+h3{
+  font-family: 'Pacifico', cursive;
+  color: black;
+  font-size: 12pt;
+  margin: 0;
+}
+
+.merch-img-l{
+  width: 300px;
+  height: 300px;
+  border-radius: 10px 80px 10px 10px;
+  float: left;
+  padding-right: 20px;
+}
+
+.merch-img-r{
+  width: 300px;
+  height: 300px;
+  border-radius: 10px 80px 10px 10px;
+  float: right;
+  padding-right: 20px;
+
+}
+
+.merch{
+  margin: 60px auto;
+  margin-bottom: 100px;
+  overflow: auto;
+}
